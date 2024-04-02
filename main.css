@@ -56,3 +56,88 @@ html {
 .small-text {
     max-width: 470px;
 }
+
+/* Section 5 Style */
+#section5 {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.card-list {
+    list-style: none;
+}
+
+.card-list li{
+    vertical-align: top;
+}
+
+.card-list li:nth-child(-n+3)::before{
+    content: url('./assets/icon/check-white.svg');
+    width: 32px;
+    height: 32px;
+}
+
+.card-list li:nth-child(n+4):before{
+    content: url('./assets/icon/check-green.svg');
+    width: 32px;
+    height: 32px;
+}
+
+.text-dark-blue {
+    color: var(--primary-color);
+}
+
+.text-light-blue {
+    color: var(--blue);
+}
+
+.btn-custom-price {
+    background-color: var(--blue);
+    color: var(--light-color);
+    align-self: center;
+    width: 80%;
+}
+
+.text-grid {
+    display: grid;
+    width: fit-content;
+    align-self: center;
+    grid-template-areas: 
+        "price dolar"
+        "price freq"
+    ;
+}
+
+.text-grid span:nth-child(1) {
+    grid-area: price;
+    width: fit-content;
+    margin-right: .5rem;
+}
+
+.text-grid span:nth-child(2) {
+    grid-area: dolar;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.text-grid span:nth-child(3) {
+    grid-area: freq;
+    width: fit-content;
+}
+
+@media screen and (min-width: 992px){
+    .text-grid {
+        grid-template-areas: 
+        "price dolar"
+        "freq freq"
+    ;
+    }
+
+    .text-grid span:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .text-grid span:nth-child(2) {
+        font-size: 2rem;
+    }
+}
