@@ -1,0 +1,23 @@
+html {
+    --primary-color: #252B42;
+    --secondary-color: #23A6F0;
+    --light-color: #FFFFFF;
+}
+
+/* Section 4 Style */
+#section4 {
+    background-color: #252B42;
+    color: white;
+}
+
+.img-custom {
+    filter: brightness(50%);
+}
+
+.btn-custom {
+    background-color: #23A6F0;
+    color: white;
+    border-radius: 37px;
+    min-width: 165px;
+}
+
