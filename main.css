@@ -1,0 +1,18 @@
+/*  Universal Design */
+
+/* Section-1 */
+
+.section-1 {
+  /* 背景画像の URL を指定 */
+  background-image: url("./assets/imgs/family.jpg");
+  /* 背景画像のサイズをカバー */
+  background-size: cover;
+  /* 背景画像を画面いっぱいに表示 */
+  background-position: center;
+}
+
+/* Section-2 */
+
+.card-img-top {
+  width: 15vw;
+}
