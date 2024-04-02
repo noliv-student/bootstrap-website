@@ -9,16 +9,22 @@ html {
 /* Section-1 */
 
 .section-1 {
-  /* 背景画像の URL を指定 */
-  background-image: url("./assets/imgs/family.jpg");
-  /* 背景画像のサイズをカバー */
-  background-size: cover;
-  /* 背景画像を画面いっぱいに表示 */
+  background-color: transparent;
+  background-image: url("./assets/imgs/#hero-cover.1.jpg");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button-custom {
+  background-color: var(--secondary-color);
+  border: none;
 }
 
 /* Section-2 */
-
-.card-img-top {
-  width: 15vw;
+.section-2 {
+  background-color: var(--primary-color);
+}
+.card-title,
+.card-text {
+  color: white;
 }
