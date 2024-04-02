@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section6 {
+    background-image: url(./Assets/contact-backimg.jpg);
+    padding: 0px 195px;
+}
+
+.form-section {
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 5px; 
+  }
+  .form-control {
+    margin-bottom: 15px; 
+  }
