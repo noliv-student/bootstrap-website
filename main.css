@@ -1,3 +1,9 @@
+html {
+  --primary-color: #252b42;
+  --secondary-color: #23a6f0;
+  --light-color: #ffffff;
+}
+
 /*  Universal Design */
 
 /* Section-1 */
