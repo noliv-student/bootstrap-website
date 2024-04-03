@@ -1,6 +1,7 @@
 html {
   --primary-color: #252b42;
   --secondary-color: #23a6f0;
+  --blue: #8EC2F2;
   --light-color: #ffffff;
 }
 
@@ -57,7 +58,144 @@ html {
 .section-2 {
   background-color: var(--primary-color);
 }
-.card-title,
-.card-text {
+.section-2 .card-title,
+.section-2 .card-text {
   color: white;
+}
+
+/* Section 3 Style */
+#section3 {
+  background-color: var(--blue);
+  color: var(--light-color);
+}
+
+.h-290 {
+  min-height: 290px;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.img-absolute {
+  position: absolute;
+  left: -3.75rem;
+  top: 1rem;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+@media screen and (min-width: 992px) {
+  .small-col {
+      max-width: 45%;
+  }
+  
+}
+/* Section 4 Style */
+#section4 {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.img-custom {
+  filter: brightness(70%);
+}
+
+.btn-custom {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  border-radius: 37px;
+  min-width: 165px;
+}
+
+.small-text {
+  max-width: 470px;
+}
+
+/* Section 5 Style */
+#section5 {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.card-list {
+  list-style: none;
+}
+
+.card-list li{
+  vertical-align: top;
+}
+
+.card-list li:nth-child(-n+3)::before{
+  content: url('./assets/icon/check-white.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.card-list li:nth-child(n+4):before{
+  content: url('./assets/icon/check-green.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.text-dark-blue {
+  color: var(--primary-color);
+}
+
+.text-light-blue {
+  color: var(--secondary-color);
+}
+
+.btn-custom-price {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  align-self: center;
+  width: 80%;
+}
+
+.text-grid {
+  display: grid;
+  width: fit-content;
+  align-self: center;
+  grid-template-areas: 
+      "price dolar"
+      "price freq"
+  ;
+}
+
+.text-grid span:nth-child(1) {
+  grid-area: price;
+  width: fit-content;
+  margin-right: .5rem;
+}
+
+.text-grid span:nth-child(2) {
+  grid-area: dolar;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.text-grid span:nth-child(3) {
+  grid-area: freq;
+  width: fit-content;
+}
+
+@media screen and (min-width: 992px){
+  .text-grid {
+      grid-template-areas: 
+      "price dolar"
+      "freq freq"
+  ;
+  }
+
+  .text-grid span:nth-child(1) {
+      margin-right: 0;
+  }
+
+  .text-grid span:nth-child(2) {
+      font-size: 2rem;
+  }
 }
