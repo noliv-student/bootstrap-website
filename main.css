@@ -19,7 +19,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100dvh;
 }
 .button-custom {
   background-color: var(--secondary-color);
@@ -52,7 +52,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100dvh;
   }
 
   .nav-hidden {
