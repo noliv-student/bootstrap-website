@@ -15,9 +15,6 @@ html {
     /* padding: 0px 195px; */
 }
 
-.section6 h2 {
-
-}
 
 .form-section {
     background-color: transparent; 
@@ -61,13 +58,4 @@ footer ul li a {
         background-color: var(--primary-color);
         color: var(--light-color);
     }
-
-    .logo-nocolor {
-        display: none;
-    }
-
-    .logo-color {
-        display: flex;
-    }
-
 }
