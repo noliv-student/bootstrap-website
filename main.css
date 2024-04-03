@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   --primary-color: #252b42;
   --secondary-color: #23a6f0;
@@ -197,5 +203,56 @@ html {
 
   .text-grid span:nth-child(2) {
       font-size: 2rem;
+  }
+}
+
+.section6 {
+  background-image:linear-gradient(to right, white, rgba(255, 255, 255, 0)), url(./Assets/contact-backimg.jpg);
+  /* padding: 0px 195px; */
+}
+
+
+.form-section {
+  background-color: transparent; 
+  padding: 20px;
+  border-radius: 5px; 
+}
+.form-control {
+margin-bottom: 15px; 
+}
+
+.section6 .btn,
+.section7 .btn {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  min-width: 20px;
+  min-height: min-content;
+
+}
+
+.footer-1{
+  background-color: var(--primary-color);
+}
+
+footer ul li,
+footer ul li a {
+  color: var(--light-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.footer-3 {
+  background-color: var(--light-color);
+}
+
+.logo-color {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .footer-3 {
+      background-color: var(--primary-color);
+      color: var(--light-color);
   }
 }
