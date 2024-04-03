@@ -20,10 +20,23 @@
   </head>
 
   <body>
-    <section class="section-1">
-      <nav class="navbar navbar-expand-lg m-3">
+    <section class="section-1 text-white">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">BrandName</a>
+          <a class="navbar-brand text-white fw-bold mx-md-5 mx-1" href="#"
+            >BrandName</a
+          >
+          <img
+            src="./assets/logos/icn-search.png"
+            alt="search"
+            class="d-md-none"
+          />
+          <img
+            src="./assets/logos/icn-shopping-cart.png"
+            alt="shopping-cart"
+            class="d-md-none"
+          />
+
           <button
             class="navbar-toggler"
             type="button"
@@ -33,29 +46,38 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <img src="./assets/logos/icn-menu.png" alt="Menu" />
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Log in</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="collapse navbar-collapse nav-hidden"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Log in</a>
               </li>
               <li class="nav-item">
                 <button class="btn btn-primary button-custom" type="submit">
@@ -69,19 +91,23 @@
 
       <div class="w-50 p-3 d-none d-lg-block">
         <div class="container">
-          <div class="row text-center">
-            <h1 class="">We Ensure A Best Insurance Services</h1>
-            <p class="">
+          <div class="row text-center my-4">
+            <h1 class="fw-bold display-4">
+              We Ensure A Best Insurance Services
+            </h1>
+            <p class="display-7">
               We know how large objects will act, but things on a small scale.
             </p>
           </div>
 
-          <div class="row">
-            <div class="col-12 col-sm-6">
-              <a href="#" class="btn btn-primary">Get Quote Now</a>
+          <div class="row my-4">
+            <div class="col-12 col-sm-6 d-flex justify-content-center my-4">
+              <a href="#" class="btn btn-primary border-radius"
+                >Get Quote Now</a
+              >
             </div>
-            <div class="col-12 col-sm-6">
-              <button type="button" class="btn btn-outline-light">
+            <div class="col-12 col-sm-6 d-flex justify-content-center my-4">
+              <button type="button" class="btn btn-outline-light border-radius">
                 Learn More
               </button>
             </div>
@@ -90,20 +116,24 @@
       </div>
 
       <div class="w-100 p-3 d-lg-none">
-        <div class="container">
-          <div class="row text-center">
-            <h5 class="">We Ensure A Best Insurance Services</h5>
-            <p class="">
+        <div class="container text-center">
+          <div class="row my-4">
+            <h5 class="fw-bold display-4">
+              We Ensure A Best Insurance Services
+            </h5>
+            <p class="display-7">
               We know how large objects will act, but things on a small scale.
             </p>
           </div>
 
-          <div class="row">
-            <div class="col-12 col-sm-6">
-              <a href="#" class="btn btn-primary">Get Quote Now</a>
+          <div class="row my-4">
+            <div class="col-12 col-sm-6 my-4">
+              <a href="#" class="btn btn-primary border-radius"
+                >Get Quote Now</a
+              >
             </div>
-            <div class="col-12 col-sm-6">
-              <button type="button" class="btn btn-outline-light">
+            <div class="col-12 col-sm-6 my-4">
+              <button type="button" class="btn btn-outline-light border-radius">
                 Learn More
               </button>
             </div>
@@ -113,18 +143,17 @@
     </section>
 
     <section class="section-2">
-      <div class="container text-center py-5 px-5">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 py-5 px-5">
+      <div class="container py-5 px-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-12 py-5 px-5 text-center">
             <img
               src="./assets/logos/icon-book.png"
-              class="card-img-top d-none d-sm-block w-25"
+              class="card-img-top d-none d-sm-block w-25 mx-auto"
               alt="book"
             />
-
             <img
               src="./assets/logos/mobile-img.png"
-              class="card-img-top d-block d-sm-none w-25"
+              class="card-img-top d-block d-sm-none w-25 mx-auto"
               alt="mobile"
             />
             <h5 class="card-title">Peace of Mind</h5>
@@ -133,35 +162,32 @@
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 py-5 px-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 py-5 px-5 text-center">
             <img
               src="./assets/logos/icon-bookmark.png"
-              class="card-img-top d-none d-sm-block w-25"
+              class="card-img-top d-none d-sm-block w-25 mx-auto"
               alt="bookmark"
             />
-
             <img
               src="./assets/logos/mobile-img.png"
-              class="card-img-top d-block d-sm-none w-25"
+              class="card-img-top d-block d-sm-none w-25 mx-auto"
               alt="mobile"
             />
-
             <h5 class="card-title">Peace of Mind</h5>
             <p class="card-text">
               So it really behaves like neither.Now we have given up.
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 py-5 px-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 py-5 px-5 text-center">
             <img
               src="./assets/logos/icon-people.png"
-              class="card-img-top d-none d-sm-block w-25"
+              class="card-img-top d-none d-sm-block w-25 mx-auto"
               alt="people"
             />
-
             <img
               src="./assets/logos/mobile-img.png"
-              class="card-img-top d-block d-sm-none w-25"
+              class="card-img-top d-block d-sm-none w-25 mx-auto"
               alt="mobile"
             />
             <h5 class="card-title">Peace of Mind</h5>

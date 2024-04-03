@@ -4,20 +4,53 @@ html {
   --light-color: #ffffff;
 }
 
-/*  Universal Design */
-
 /* Section-1 */
-
 .section-1 {
   background-color: transparent;
-  background-image: url("./assets/imgs/#hero-cover.1.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), black),
+    url("./assets/imgs/family.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 .button-custom {
   background-color: var(--secondary-color);
   border: none;
+}
+
+.border-radius {
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  .section-1 {
+    background-image: none;
+  }
+
+  .navbar {
+    background-color: var(--primary-color);
+  }
+
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .d-lg-none {
+    background-color: transparent;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), black),
+      url("./assets/imgs/family.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .nav-hidden {
+    display: none;
+  }
 }
 
 /* Section-2 */
